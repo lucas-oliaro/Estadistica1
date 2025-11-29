@@ -1,0 +1,19 @@
+import numpy as np
+
+# Datos de las observaciones
+observaciones = [
+    25.11, 25.02, 25.16, 24.98, 24.83, 25.05, 24.94, 25.04, 24.99, 24.96,
+    25.03, 24.97, 24.93, 25.12, 25.01, 25.12, 24.90, 24.98, 25.10, 24.96
+]
+
+# Número de observaciones y varianza de los errores
+n = len(observaciones)
+var_errores = 0.01
+
+# Cálculo del estimador de mu (promedio)
+mu_estimado = np.mean(observaciones)
+
+# Cálculo de la varianza del estimador de mu
+var_est_mu = var_errores / n
+
+print(mu_estimado, var_est_mu)
